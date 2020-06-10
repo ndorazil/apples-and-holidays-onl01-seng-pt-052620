@@ -40,7 +40,7 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday_values|
     holiday_values.each do |holiday, values|
-      if holiday.include?("BBQ")
+      if values.include?("BBQ")
         values.collect do |supply|
           puts holiday
         end
